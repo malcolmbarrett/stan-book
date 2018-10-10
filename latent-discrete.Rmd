@@ -566,8 +566,9 @@ no need for a latent binary parameter indicating whether an animal is
 alive at time $t$ or not.  The definition of $\chi$ is typically used
 to define the likelihood (i.e., marginalize out the latent discrete
 parameter) for the CJS model [@Schofield:2007, page 9].
-[@an model de; @ines $\chi$ as a trans]ormed parameter based on
-para@$\phi$ and p$.  In the model block, the log probability is
+
+The Stan model defines $\chi$ as a transformed parameter based on
+parameters $\phi$ and $p$.  In the model block, the log probability is
 incremented for each history based on its count.  This second step is
 similar to collecting Bernoulli observations into a binomial or
 categorical observations into a multinomial, only it is coded directly
@@ -889,7 +890,7 @@ challenge in the modeling for Stan is to marginalize out the discrete
 parameters.
 
 @DawidSkene:1979 introduce a noisy-measurement model for
-[@ding and ap; @ly in the epidemiologi]al setting of coding what
+coding and apply it in the epidemiologial setting of coding what
 doct@s say aboutpatient histories;  the same model can be used
 for diagnostic procedures.
 
